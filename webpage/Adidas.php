@@ -4,7 +4,7 @@
 	header("Content-Type:text/html; charset=utf-8");
 	set_time_limit(0);
 
-        $data_json = file_get_contents(dirname(__FILE__)."/json/Adidas.json");
+        $data_json = file_get_contents(dirname(__FILE__)."/../json/Adidas.json");
 	$data_array = json_decode($data_json, true);
 	foreach($data_array as $key => $value){
 		echo "<div style='width:300px;height:500px;margin:10px;float:left;'>";

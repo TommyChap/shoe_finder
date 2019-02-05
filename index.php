@@ -49,7 +49,7 @@
 	}else{	
 		$brand_url = json_decode($brand_url_json, true);
 		foreach($brand_url as $key => $value){
-			echo "<a href='./".$key.".php'>".$key."</a><br>";
+			echo "<a href='./webpage/".$key.".php'>".$key."</a><br>";
 		}
 	}
 	// Save TimeStamp
